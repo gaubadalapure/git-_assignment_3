@@ -1,15 +1,15 @@
 function prime(num){
-  let factors=0;
-  for(let i=0;i<=num;i++){
-    if(num%i==0){
-      factors++;
+  let count=0;
+  for(let i=2;i<=num;i++){
+    if(num%i==2){
+      count++;
     }
   }
-  if(factors==2){
-    console.log("Yes");
+  if(count==2){
+    console.log("prime");
   }
   else{
     console.log("not a prime");
   }
 }
-prime(13);
+prime(17);
